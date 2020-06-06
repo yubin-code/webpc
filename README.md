@@ -274,6 +274,6 @@ module.exports = {
 ## 关于作者
 作者： 大斌  
 Github：https://github.com/yubin-code  
-个人网站： 没钱买不起服务器部署不行   - -  
+个人网站： 没钱买不起服务器部署不起来   - -  
 
 对内容有任何疑问，欢迎联系我。  
