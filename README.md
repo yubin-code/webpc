@@ -49,7 +49,7 @@ $ webpc init
 
 # 安装依赖
 $ yarn
-# and
+# or
 $ npm i
 
 # 启动项目

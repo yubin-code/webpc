@@ -1,6 +1,5 @@
 import { join } from 'path'
-// import Service from '@webpc/plug'
-import Service from '../../../base/lib/index'
+import Service from '@webpc/plug'
 import { BaseOpts } from '@webpc/plug/types'
 
 class HtmlService extends Service{
