@@ -1,17 +1,26 @@
+[文档](https://github.com/yubin-code/webpc)
+
 # webpc
-> 主要解决纯静态多页页面的webpack配置问题在往常需要写一堆配置现在不一样使用`webpc`安装好就能马上开发
+> 主要解决纯静态多页页面的webpack配置问题   
+> 在往常需要写一堆配置现在有了`webpc`安装好就能马上开发  
 
-# webpc 核心是插件驱动代码分为三层
+## 版本要求 node >= v10.0.0
 
-1.核心层 [@webpc/core](https://github.com/yubin-code/webpc-core) 提供插件核心原动力目前是参考umi实现的想学习的可以看下
+## webpc 核心是插件驱动代码分为三层
 
-2.插件层 [@webpc/plug](https://github.com/yubin-code/webpc-plug) 提供webpack内置插件方便快速开发脚手架
-
-3.应用层 [webpc](https://github.com/yubin-code/webpc) webpc 就属于应用层
+1.核心层 [@webpc/core](https://github.com/yubin-code/webpc-core) 提供插件核心原动力目前是参考umi实现的想学习的可以看下   
+2.插件层 [@webpc/plug](https://github.com/yubin-code/webpc-plug) 提供webpack内置插件方便快速开发脚手架   
+3.应用层 [webpc](https://github.com/yubin-code/webpc) webpc 就属于应用层   
 
 这么分的目的是为了以后还能开发别的脚手架
 
-# 版本要求 node >= v10.0.0
+
+## 特点
+> 1.自动监控 html 文件变化并加入到`webpack`编译中  
+> 2.使用`ejs`可以直接引入让公用的html代码让代码更简洁    
+> 3.支持`webpack`自定义配置如果目前功能帮助不了可以自行添加新的配置   
+> 4.支持`rem`只要配置一个基准值就能直接把px转成rem让移动开发更简单   
+
 
 ## 目前已支持的功能
 > 1.支持多页面开发  
@@ -21,8 +30,10 @@
 > 5.支持ejs 模版  
 > 6.支持代码压缩  
 > 7.支持公共代码抽离   
-> 8.支持rem让移动开发更简单  
+> 8.支持rem
 > 9.支持webpack 自定义配置  
+
+如果您还有别的需要可以在[这里](https://github.com/yubin-code/webpc/issues)提交给我
 
 
 ## 使用方式也很简单 直接安装webpc
