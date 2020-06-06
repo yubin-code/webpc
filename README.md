@@ -6,7 +6,7 @@
 
 2.插件层 [@webpc/plug](https://github.com/yubin-code/webpc-plug) 提供webpack内置插件方便快速开发脚手架
 
-3.应用层 [webpc]() webpc 已经是属于应用层了可以用来使用的
+3.应用层 [webpc](https://github.com/yubin-code/webpc) webpc 已经是属于应用层了可以用来使用的
 
 这么分的目的是为了以后还能开发别的脚手架
 
@@ -18,10 +18,22 @@
 > 4.支持代码热更新  
 > 5.支持ejs 模版  
 > 6.支持代码压缩  
-> 7.支持公共代码抽离开  
+> 7.支持公共代码抽离   
 > 8.支持rem让移动开发更简单  
 > 9.支持webpack 自定义配置  
 
+
+## 目录结构
+```txt
+src  
+  - assets  
+  - css  
+  - js  
+  - viwe  
+.webcof.js  
+README.md  
+package.json  
+```
 
 ## 使用方式也很简单
 ```bash
@@ -34,6 +46,11 @@ $ npm i webpc -g
 $ mkdir myapp && cd myapp
 # and
 $ webpc init
+
+# 安装依赖
+$ yarn
+# and
+$ npm i
 
 # 启动项目
 $ yarn run dev
@@ -52,6 +69,8 @@ $ webpc -v
 $ webpc -h
 ```
 
+## 启动成功
+![start](./img/start.png)
 
 ## 配置说明
 跟目录下提供了 `.webcof.js` 配置文件
