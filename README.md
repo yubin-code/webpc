@@ -74,6 +74,45 @@ $ webpc -h
 ## 启动成功
 ![start](./img/start.png)
 
+
+## 使用说明html引入
+使用@require直接引入公用的html
+ejs 是模版引擎最终编译html可以压缩也可以不压缩
+
+
+```html
+<body>
+  @require('./common/header.ejs')
+  <h1>webpc</h1>
+  <p>👏 大白菜等你摘，欢迎使用webpc让web开发变得更便捷</p>
+  @require('./common/footer.ejs')
+</body>
+```
+
+## css 直接引入公用的css
+
+```css
+@import "./common.less";
+body {
+  padding: 50px;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+```
+
+## css问题注意⚠️
+如果需要使用css需要在js中引入他页面   
+最终打包的时候可以选择是分离出来还是直接打包到html页面中去 
+
+```javascript
+// index.js 中引入css
+import '@/css/index.less'
+
+```
+
+
+
+
 ## 配置说明
 根目录下提供了 `.webcof.js` 配置文件以下是默认配置
 ```javascript
