@@ -25,7 +25,22 @@
 > 9.支持webpack 自定义配置  
 
 
-## 目录结构
+## 使用方式也很简单 直接安装webpc
+```bash
+# 安装
+$ yarn global add webpc
+# or
+$ npm i webpc -g
+```
+
+## 初始化项目
+```bash
+$ mkdir myapp && cd myapp
+# and
+$ webpc init
+```
+
+## 生成成功目录结构
 ```txt
 src  
   - assets  
@@ -37,47 +52,27 @@ README.md
 package.json  
 ```
 
-## 使用方式也很简单直接安装webpc
+## 安装依赖
 ```bash
-# 安装
-$ yarn global add webpc
-# or
-$ npm i webpc -g
-
-# 初始化项目
-$ mkdir myapp && cd myapp
-# and
-$ webpc init
-
-# 安装依赖
 $ yarn
 # or
 $ npm i
+```
 
-# 启动项目
+## 启动项目
+```bash
 $ yarn run dev
 # or
 $ npm run dev
-
-# 打包项目
-$ yarn run build
-# or
-$ npm run build
-
-# 查看版本
-$ webpc -v
-
-# 显示帮助
-$ webpc -h
 ```
 
-## 启动成功显示如下
+
+## 启动成功界面
 ```bash
 ✔ Webpack
   Compiled successfully in 4.72s
 
- DONE  Compiled successfully in 4718ms                                                                                        19:46:32
-
+ DONE  Compiled successfully in 4718ms       
            ▍ ★∴
 　s ．t ．▍▍a．..r．█▍ ☆ ★∵t ..../ 
 　　◥█▅▅██▅▅██▅▅▅▅▅███◤ 
@@ -87,6 +82,22 @@ $ webpc -h
   服务运行成功:
   - 地址:   http://localhost:8000
   - 内网地址: http://192.168.00.00:8000
+```
+
+## 打包项目
+```bash
+$ yarn run build
+# or
+$ npm run build
+```
+
+## 其他命令
+```bash
+# 查看版本
+$ webpc -v
+
+# 显示帮助
+$ webpc -h
 ```
 
 
@@ -259,10 +270,6 @@ module.exports = {
 }
 ```
 
-## 其他
-如果有问题与建议可以在[这里](https://github.com/yubin-code/webpc/issues)提交
-
-
 ## 微信群学习群
 ![img](./img/qun.jpg)
 
@@ -277,3 +284,7 @@ Github：https://github.com/yubin-code
 个人网站： 没钱买不起服务器部署不起来   - -  
 
 对内容有任何疑问，欢迎联系我。  
+
+
+## 其他
+如果有问题与建议可以在[这里](https://github.com/yubin-code/webpc/issues)提交
