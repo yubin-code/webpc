@@ -1,5 +1,6 @@
 import { readdirSync } from 'fs';
 import Spinnies from 'spinnies';
+import os from 'os';
 import { join } from 'path';
 import { copy, readJson, writeJson } from 'fs-extra';
 import { delay } from '../utils'
@@ -33,13 +34,27 @@ export default (api: InitType) => {
 
     // 设置用户的package.json
     readJson(join(api.root, '/template/package.json'), (err, data) =>{
-      // 获取用户目录名称
-      const userFilelen = userCwd.lastIndexOf('/')
-      const userFile = userCwd.substring(userFilelen+1)
+      const isWindow = os.type() === "Windows_NT"
+      /**
+       * 获取用户目录名称
+       * window路径是window路径是 \\ 而mac是/
+       * 所以这里需要做下判断
+       */
+      const userFilelen = userCwd.lastIndexOf(isWindow ? '\\' : '/')
+      let userFile = userCwd.substring(userFilelen+1)
       // 设置用户项目名称
       const userPackage = data
+      /**
+       * 如果是window 设置以下内容
+       * 因为window不支持直接写环境变量不然会报错
+       */
+      if(isWindow){
+        // userFile = "my-app"
+        userPackage.scripts.dev = "webpc dev"
+        userPackage.scripts.build = "webpc build"
+      }
+
       userPackage.name = userFile
-      
       userPackage.dependencies.webpc = pkg.version
       
       writeJson(join(userCwd, 'package.json'), userPackage, { spaces: '\t' }).then(async () => {
