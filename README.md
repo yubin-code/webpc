@@ -71,13 +71,28 @@ $ webpc -v
 $ webpc -h
 ```
 
-## 启动成功
-![start](./img/start.png)
+## 启动成功显示如下
+```bash
+✔ Webpack
+  Compiled successfully in 4.72s
+
+ DONE  Compiled successfully in 4718ms                                                                                        19:46:32
+
+           ▍ ★∴
+　s ．t ．▍▍a．..r．█▍ ☆ ★∵t ..../ 
+　　◥█▅▅██▅▅██▅▅▅▅▅███◤ 
+ 　 ．◥███████████████◤
+～～～～◥█████████████◤～～～～准备起航
+～～～～～～～～～～～～～～～～～～～～～～～～
+  服务运行成功:
+  - 地址:   http://localhost:8000
+  - 内网地址: http://192.168.00.00:8000
+```
 
 
 ## 使用说明html引入
-使用@require直接引入公用的html
-ejs 是模版引擎最终编译html可以压缩也可以不压缩
+使用@require直接引入公用的html   
+ejs 是模版引擎最终编译html可以配置压缩或不压缩
 
 
 ```html
@@ -101,7 +116,7 @@ body {
 ```
 
 ## css问题注意⚠️
-如果需要使用css需要在js中引入他页面   
+如果需要使用css需要在js中引入它    
 最终打包的时候可以选择是分离出来还是直接打包到html页面中去 
 
 ```javascript
@@ -254,3 +269,11 @@ module.exports = {
 
 ## 您的支持是我最大的动力
 ![img](./img/pay.jpg)
+
+
+## 关于作者
+作者： 大斌  
+Github：https://github.com/yubin-code  
+个人网站： 没钱买不起服务器部署不行   - -  
+
+对内容有任何疑问，欢迎联系我。  
