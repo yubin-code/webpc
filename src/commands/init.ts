@@ -49,6 +49,8 @@ export default (api: InitType) => {
           [
             " ",
             chalk.magenta("🔮start up project run"),
+            chalk.magenta("yarn"),
+            chalk.magenta("and"),
             chalk.magenta("webpk dev"),
             " "
           ]

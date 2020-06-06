@@ -1,7 +1,7 @@
 {
   "name": "name",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "ndex.js",
   "scripts": {
     "dev": "NODE_ENV=development webpc dev",
     "build": "NODE_ENV=production webpc build"
@@ -10,7 +10,8 @@
   "files": [
     "/lib",
     "/dist",
-    "/types"
+    "/types",
+    "/web"
   ],
   "browserslist": [
     "> 1%",
