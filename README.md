@@ -2,7 +2,7 @@
 > 主要解决纯静态多页页面的webpack配置问题在往常需要写一堆配置现在不一样使用`webpc`安装好就能马上开发
 
 # webpc 核心代码分为三层
-1.核心层 [@webpc/core](https://github.com/yubin-code/webpc-core) 提供插件核心原动力目前是参考umi实现的想学习的可以看下
+1.核心层 [@webpc/core](https://github.com/yubin-code/webpc-core) 提供插件核心原动力目前是参考umi实现的想学习的可以看下
 
 2.插件层 [@webpc/plug](https://github.com/yubin-code/webpc-plug) 提供webpack内置插件方便快速开发脚手架
 
@@ -12,15 +12,15 @@
 
 
 ## 目前已支持的功能
-> 1.支持多页面开发
-> 2.支持less语法
-> 3.支持es6与ts语法
-> 4.支持代码热更新
-> 5.支持ejs 模版
-> 6.支持代码压缩
-> 7.支持公共代码抽离开
-> 8.支持rem让移动开发更简单
-> 9.支持webpack 自定义配置
+> 1.支持多页面开发  
+> 2.支持less语法  
+> 3.支持es6与ts语法  
+> 4.支持代码热更新  
+> 5.支持ejs 模版  
+> 6.支持代码压缩  
+> 7.支持公共代码抽离开  
+> 8.支持rem让移动开发更简单  
+> 9.支持webpack 自定义配置  
 
 
 ## 使用方式也很简单
@@ -55,7 +55,7 @@ $ webpc -h
 
 ## 配置说明
 跟目录下提供了 `.webcof.js` 配置文件
-```json
+```javascript
 const path = require('path');
 // 判断是否开发环境
 const isDev = process.env.NODE_ENV === "development"
@@ -189,9 +189,8 @@ module.exports = {
 
 
 ## 微信群学习群
-![img](https://dabinpublic.oss-cn-beijing.aliyuncs.com/qun.jpg
-)
+![img](./img/qun.jpg)
 
 
 ## 您的支持是我最大的动力
-![Image text](https://dabinpublic.oss-cn-beijing.aliyuncs.com/pay.jpg)
+![img](./img/pay.jpg)
