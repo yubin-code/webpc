@@ -1,12 +1,13 @@
 # webpc
 > 主要解决纯静态多页页面的webpack配置问题在往常需要写一堆配置现在不一样使用`webpc`安装好就能马上开发
 
-# webpc 核心代码分为三层
+# webpc 核心是插件驱动代码分为三层
+
 1.核心层 [@webpc/core](https://github.com/yubin-code/webpc-core) 提供插件核心原动力目前是参考umi实现的想学习的可以看下
 
 2.插件层 [@webpc/plug](https://github.com/yubin-code/webpc-plug) 提供webpack内置插件方便快速开发脚手架
 
-3.应用层 [webpc](https://github.com/yubin-code/webpc) webpc 已经是属于应用层了可以用来使用的
+3.应用层 [webpc](https://github.com/yubin-code/webpc) webpc 就属于应用层
 
 这么分的目的是为了以后还能开发别的脚手架
 
@@ -36,7 +37,7 @@ README.md
 package.json  
 ```
 
-## 使用方式也很简单
+## 使用方式也很简单直接安装webpc
 ```bash
 # 安装
 $ yarn global add webpc
@@ -74,7 +75,7 @@ $ webpc -h
 ![start](./img/start.png)
 
 ## 配置说明
-跟目录下提供了 `.webcof.js` 配置文件
+根目录下提供了 `.webcof.js` 配置文件以下是默认配置
 ```javascript
 const path = require('path');
 // 判断是否开发环境
